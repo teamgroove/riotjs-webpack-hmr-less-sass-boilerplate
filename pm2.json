@@ -1,0 +1,9 @@
+{
+  "apps" : [{
+    "name": "riotjs-hmr-8080",
+    "script": "npm",
+    "args": ["run","dev"],
+   // "cwd": "/home/lowtech/fullpage/",
+    "watch": "./webpack.config.babel.js"
+  }]
+}

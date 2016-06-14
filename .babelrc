@@ -1,0 +1,10 @@
+{
+  "sourceMaps": true,
+  "presets": [
+    "es2015-minimal",
+    "stage-0",
+    "es2015-riot"
+  ],
+  "plugins": [
+  ]
+}
