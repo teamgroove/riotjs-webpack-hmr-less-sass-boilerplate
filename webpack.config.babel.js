@@ -9,17 +9,27 @@ const CSS_MAPS = ENV!=='production';
 
 module.exports =  {
 context: `${__dirname}/app`,
-  entry: [
-  'webpack-dev-server/client?https://0.0.0.0:8080/',
-  'webpack/hot/dev-server',
-  `${__dirname}/app/index`,
-  ],
+  entry: {
+  'wp': 'webpack-dev-server/client?https://0.0.0.0:8080/',
+  'wp-hot': 'webpack/hot/dev-server',
+  'bundle':`${__dirname}/app/index`,
+  },
+  /*
 
   output: {
     path: `${__dirname}/build`,
     publicPath: '/',
     filename: 'bundle.js'
+    
   },
+  
+  */
+   output: {
+        path: `${__dirname}/build`,
+        filename: "[name].entry.js"
+    },
+  
+  
   resolve: {
     extensions: ['', '.jsx', '.js', '.json', '.less'],
     modulesDirectories: [

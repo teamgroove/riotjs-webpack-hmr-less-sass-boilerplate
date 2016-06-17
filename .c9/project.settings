@@ -50,9 +50,21 @@
         "configs": {
             "@inited": "true",
             "json()": {
+                "build": {
+                    "command": "npm run build",
+                    "name": "build",
+                    "runner": "Shell command",
+                    "toolbar": true
+                },
                 "dev": {
                     "command": "npm run dev",
                     "name": "dev",
+                    "runner": "Shell command",
+                    "toolbar": true
+                },
+                "start": {
+                    "command": "npm run start",
+                    "name": "start",
                     "runner": "Shell command",
                     "toolbar": true
                 }
