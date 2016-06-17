@@ -10,7 +10,7 @@ const CSS_MAPS = ENV!=='production';
 module.exports =  {
 context: `${__dirname}/app`,
   entry: [
-  'webpack-dev-server/client?http://localhost:8080/',
+  'webpack-dev-server/client?https://0.0.0.0:8080/',
   'webpack/hot/dev-server',
   `${__dirname}/app/index`,
   ],
@@ -114,7 +114,7 @@ context: `${__dirname}/app`,
 
   devServer: {
     port: process.env.PORT || 8080,
-    //host: '0.0.0.0',
+    host: '0.0.0.0',
     colors: true,
     publicPath: '/',
     contentBase: './app',
